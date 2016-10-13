@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="uneplive, changing the environment, place by place">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>UNEP Live</title>
+    <title></title>
 
     <!-- Page styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
@@ -19,6 +19,8 @@
       .custom-main-header {
         background-color: #497ED8;
         height: 150px;
+
+
       }
       .demo-layout-transparent .mdl-layout__header,
       .demo-layout-transparent .mdl-layout__drawer-button {
@@ -47,8 +49,9 @@
         flex-direction: column;
         justify-content: flex-end;
         padding: 16px;
-        height: 151px;
+        height: 150px;
         background-color: #497ED8;
+        background: url('images/unep_live_bg_darker_revised.png') center / cover;
       }
 
 
@@ -185,6 +188,39 @@
       .mdl-select__expandable-holder .mdl-select__label:after {
         bottom: 0;
       }
+
+
+
+      .custom-card-full-width {
+        width: 100%;
+        min-height: 0px;
+        height: 50px;
+
+      }
+      .custom-card-height-100 {
+
+        min-height: 0px;
+        height: 120px;
+
+      }
+
+
+      .mdl-textfield__label__icon {
+        position: absolute;
+        right: 0;
+        top: 20px;
+      }
+
+      .custom-search-image {
+        width: 25px;
+        height: 25px;
+        background: url('images/search.gif') center / cover;
+      }
+
+      .custom-mdl-card-media {
+        background-color: #e3f2fd;
+        padding: 5px;
+      }
     </style>
 
 
@@ -212,7 +248,7 @@
     <div class="mdl-layout__drawer">
       <header class="demo-drawer-header">
 
-        <span class="mdl-layout-title">Title</span>
+        <span class="mdl-layout-title">Menu</span>
       </header>
 
       <nav class="mdl-navigation">
@@ -230,50 +266,128 @@
       <div class="page-content">
 
         <div class="mdl-grid mdl-color--grey-200">
-          <div class="mdl-cell mdl-cell--12-col">Latest</div>
+          <div class="mdl-cell mdl-cell--12-col">
+
+
+            <div class="mdl-card mdl-card--border custom-card-full-width">
+
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-bold">Latest:</span> This example will take only 50% width
+              </div>
+
+            </div>
+          </div>
 
         </div>
 
-        <div class="mdl-grid ">
-          <div class="mdl-cell mdl-cell--4-col">
+        <div class="mdl-grid mdl-color--grey-200">
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--12-col-phone">
 
 
+            <div class="mdl-card mdl-card--border custom-card-height-100 ">
+              <div class="mdl-card__media mdl-color--blue-500 custom-mdl-card-media">
+                <img class="article-image " style="max-height: 30px; " src=" images/globe.gif" border="0" alt="">
+              </div>
+              <div class="mdl-card__supporting-text">
+                <div class="mdl-select mdl-js-select mdl-select--floating-label">
+                <select class="mdl-select__input" id="professsion" onchange="location = this.value;" name="professsion">
+                  <option value=""></option>
+                  <option value="option1">option 1</option>
+                  <option value="option2">option 2</option>
+                  <option value="http://google.com"><a href="">option 3</a></option>
+                  <option value="option4">option 4</option>
+                  <option value="option5">option 5</option>
+                </select>
+                <label class="mdl-select__label" for="professsion">Global/Region/Country</label>
+              </div>
+              </div>
 
-            <div class="mdl-select mdl-js-select mdl-select--floating-label">
-              <select class="mdl-select__input" id="professsion" onchange="location = this.value;" name="professsion">
-                <option value=""></option>
-                <option value="option1">option 1</option>
-                <option value="option2">option 2</option>
-                <option value="http://google.com"><a href="">option 3</a></option>
-                <option value="option4">option 4</option>
-                <option value="option5">option 5</option>
-              </select>
-              <label class="mdl-select__label" for="professsion">Profession</label>
             </div>
-
-          </div>
-          <div class="mdl-cell mdl-cell--4-col">
-
-
-            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-              <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="Name">
-              <label class="mdl-textfield__label" for="Name">Name...</label>
-              <span class="mdl-textfield__error">Letters and spaces only</span>
-            </div>
-
-
 
 
           </div>
-          <div class="mdl-cell mdl-cell--4-col">
+          <div class="mdl-cell mdl-cell--3-col">
 
 
+            <div class="mdl-card mdl-card--border custom-card-height-100  ">
+              <div class="mdl-card__media mdl-color--blue-500 custom-mdl-card-media ">
+                <img class="article-image" style="max-height: 30px" src=" images/theme.gif" border="0" alt="">
+              </div>
+              <div class="mdl-card__supporting-text">
+                <div class="mdl-select mdl-js-select mdl-select--floating-label">
+                  <select class="mdl-select__input" id="professsion" onchange="location = this.value;" name="professsion">
+                    <option value=""></option>
+                    <option value="option1">option 1</option>
+                    <option value="option2">option 2</option>
+                    <option value="http://google.com"><a href="">option 3</a></option>
+                    <option value="option4">option 4</option>
+                    <option value="option5">option 5</option>
+                  </select>
+                  <label class="mdl-select__label" for="professsion">Theme</label>
+                </div>
+              </div>
 
-            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-              <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="Name">
-              <label class="mdl-textfield__label" for="Name">Name...</label>
-              <span class="mdl-textfield__error">Letters and spaces only</span>
             </div>
+
+
+
+
+
+
+
+          </div>
+          <div class="mdl-cell mdl-cell--3-col">
+
+
+
+            <div class="mdl-card mdl-card--border custom-card-height-100 ">
+              <div class="mdl-card__media mdl-color--blue-500 custom-mdl-card-media">
+                <img class="article-image" style="max-height: 30px" src=" images/sdgs.gif" border="0" alt="">
+              </div>
+              <div class="mdl-card__supporting-text">
+                <div class="mdl-select mdl-js-select mdl-select--floating-label">
+                  <select class="mdl-select__input" id="professsion" onchange="location = this.value;" name="professsion">
+                    <option value=""></option>
+                    <option value="option1">option 1</option>
+                    <option value="option2">option 2</option>
+                    <option value="http://google.com"><a href="">option 3</a></option>
+                    <option value="option4">option 4</option>
+                    <option value="option5">option 5</option>
+                  </select>
+                  <label class="mdl-select__label" for="professsion">SDG Synergies</label>
+                </div>
+              </div>
+
+            </div>
+
+
+
+
+          </div>
+          <div class="mdl-cell mdl-cell--3-col">
+
+
+
+            <div class="mdl-card mdl-card--border custom-card-height-100">
+
+              <div class="mdl-card__media mdl-color--blue-500 custom-mdl-card-media">
+                <img class="article-image" style="max-height: 30px" src=" images/search.gif" border="0" alt="">
+              </div>
+              <div class="mdl-card__supporting-text">
+
+
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="Name">
+                  <label class="mdl-textfield__label" for="Name">Search...</label>
+                  <span class="mdl-textfield__error">Letters and spaces only</span>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
 
 
           </div>
